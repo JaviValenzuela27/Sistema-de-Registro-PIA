@@ -30,6 +30,7 @@ const ItemWithIcon = (props: ItemWithIconProps) => {
 
 export default function HeaderProfileNav() {
   const router = useRouter()
+  
 
   const logout = async () => {
     const res = await axios.post('/api/mock/logout')
