@@ -33,7 +33,7 @@ const NuevoDoc: React.FC = () => {
 
         const formatsUrl = `http://10.120.1.68:191/api/departments/formats/${selectedValue}`;
         fetchData(formatsUrl).then((data) => {
-            setFormats(data);
+            setFormats(data.formats);
         });
     };
 
